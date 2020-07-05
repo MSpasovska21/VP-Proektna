@@ -32,6 +32,7 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnHowToPlay = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lnlRights = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnPlay
@@ -76,21 +77,39 @@
             this.btnExit.MouseLeave += new System.EventHandler(this.Exit_MouseLeave);
             this.btnExit.MouseHover += new System.EventHandler(this.Exit_MouseHover);
             // 
+            // lnlRights
+            // 
+            this.lnlRights.AutoSize = true;
+            this.lnlRights.BackColor = System.Drawing.Color.Transparent;
+            this.lnlRights.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnlRights.LinkColor = System.Drawing.Color.White;
+            this.lnlRights.Location = new System.Drawing.Point(23, 427);
+            this.lnlRights.Name = "lnlRights";
+            this.lnlRights.Size = new System.Drawing.Size(81, 15);
+            this.lnlRights.TabIndex = 3;
+            this.lnlRights.TabStop = true;
+            this.lnlRights.Text = "© 2020 FCSE";
+            this.lnlRights.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lnlRights.Click += new System.EventHandler(this.lnlRights_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::ConnectFour.Properties.Resources.naslovna;
+            this.BackgroundImage = global::ConnectFour.Properties.Resources.naslovnaa;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 461);
+            this.Controls.Add(this.lnlRights);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnHowToPlay);
             this.Controls.Add(this.btnPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connect 4";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,6 +118,7 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnHowToPlay;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.LinkLabel lnlRights;
     }
 }
 

@@ -51,6 +51,7 @@
             this.Controls.Add(this.tbInstructions);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Instructions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "How to play";
             this.Load += new System.EventHandler(this.Instructions_Load);
             this.Resize += new System.EventHandler(this.Insttructions_Resize);

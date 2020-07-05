@@ -62,5 +62,19 @@ namespace ConnectFour
         {
             //DA SE DOPUNI KOD !!!!!!!!!!
         }
+
+        private void lnlRights_Click(object sender, EventArgs e)
+        {
+            string text = "Connect 4 is made by\r\n";
+            text += "\t1. Monika Spasovska (186012)\r\n";
+            text += "\t2. Vladimir Savic (186072)\r\n";
+            text += "under mentorship of\r\n";
+            text += "\t1. Gjorgji Madjarov, Ph.D.\r\n";
+            text += "\t2. Aleksandar Stojmenski, M.Sc.\r\n\r\n";
+            text += "This project is part of course Visual Programming in academic year 2019/2020.\r\n";
+            text += "All rights reserved by FCSE.\r\n";
+
+            MessageBox.Show(text, "COPYRIGHT");
+        }
     }
 }
