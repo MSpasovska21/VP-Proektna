@@ -1,0 +1,11 @@
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\bin\Debug\ConnectFour.exe.config
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\bin\Debug\ConnectFour.exe
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\bin\Debug\ConnectFour.pdb
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csprojAssemblyReference.cache
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Properties.Resources.resources
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csproj.GenerateResource.cache
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csproj.CoreCompileInputs.cache
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.exe
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.pdb
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Form1.resources
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Instructions.resources
