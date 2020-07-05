@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnHowToPlay = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -86,6 +87,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnHowToPlay);
             this.Controls.Add(this.btnPlay);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Connect 4";
             this.ResumeLayout(false);
