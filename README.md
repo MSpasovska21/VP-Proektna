@@ -44,7 +44,7 @@ Milton Bradley (сега во сопственост на Hasbro) објавил
 
 ##Имплементација
 ---
-Функцијата ```isWinner()``` во ```Form1```
+Функцијата ```isWinning()``` во ```Form1```
 ```
 public bool isWinning(int col, int pturn)
         {
