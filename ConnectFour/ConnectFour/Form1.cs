@@ -112,6 +112,12 @@ namespace VP_Proekt_Connect4
             lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
             lblTurn.Text = player1.name + "'s turn";
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private int Column(Point p)
         {
             for (int i = 0; i <= 600; i += 100)
