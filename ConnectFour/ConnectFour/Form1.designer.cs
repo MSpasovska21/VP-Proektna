@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 711);
+            this.ClientSize = new System.Drawing.Size(1184, 671);
             this.Controls.Add(this.lblBestOf);
             this.Controls.Add(this.lblDraw);
             this.Controls.Add(this.lblRounds2);
@@ -200,6 +200,7 @@
             this.Controls.Add(this.pnlBoard);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connect 4";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
