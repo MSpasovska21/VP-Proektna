@@ -100,6 +100,12 @@ namespace VP_Proekt_Connect4
             lblRounds1.Text = "Player 1 Rounds Won: " + rounds1.ToString();
             lblRounds2.Text = "Player 2 Rounds Won: " + rounds2.ToString();
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private int Column(Point p)
         {
             for (int i = 0; i <= 600; i += 100)
