@@ -1,7 +1,7 @@
-[#**Connect 4**](https://www.youtube.com/watch?v=utXzIFEVPjA)
+[# **Connect 4**](https://www.youtube.com/watch?v=utXzIFEVPjA)
 ---
 
-## Историја
+##Историја
 ---
 Оваа игра е стара со векови. Капетанот Џејмс Кук ја играл со неговите колеги официри за време на неговите долги патувања, па затоа била наречена и „Captain's Mistress“. 
 Milton Bradley (сега во сопственост на Hasbro) објавиле верзија на оваа игра во 1974 година под името „Connect 4“.
