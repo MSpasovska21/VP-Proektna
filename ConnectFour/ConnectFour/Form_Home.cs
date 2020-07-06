@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VP_Proekt_Connect4;
 
 namespace ConnectFour
 {
@@ -60,7 +61,9 @@ namespace ConnectFour
 
         private void Play_Click(object sender, EventArgs e)
         {
-            //DA SE DOPUNI KOD !!!!!!!!!!
+           // this.Close();
+            var f = new Form1();
+            f.Show();
         }
 
         private void lnlRights_Click(object sender, EventArgs e)
