@@ -25,6 +25,8 @@ namespace ConnectFour
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form_Home home = new Form_Home();
+            home.Show();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
