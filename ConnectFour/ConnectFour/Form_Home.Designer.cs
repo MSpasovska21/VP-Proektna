@@ -1,6 +1,6 @@
 ﻿namespace ConnectFour
 {
-    partial class Form1
+    partial class Form_Home
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Home));
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnHowToPlay = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -92,7 +92,7 @@
             this.lnlRights.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lnlRights.Click += new System.EventHandler(this.lnlRights_Click);
             // 
-            // Form1
+            // Form_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -105,7 +105,7 @@
             this.Controls.Add(this.btnHowToPlay);
             this.Controls.Add(this.btnPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Form_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connect 4";
             this.ResumeLayout(false);

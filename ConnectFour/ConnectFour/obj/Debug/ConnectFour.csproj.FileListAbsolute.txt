@@ -7,5 +7,5 @@ C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFou
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csproj.CoreCompileInputs.cache
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.exe
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.pdb
-C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Form1.resources
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Instructions.resources
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Form_Home.resources
