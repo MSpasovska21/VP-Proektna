@@ -9,3 +9,15 @@ C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFou
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.pdb
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Instructions.resources
 C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Form_Home.resources
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\bin\Debug\ConnectFour.exe.config
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\bin\Debug\ConnectFour.exe
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\bin\Debug\ConnectFour.pdb
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csprojAssemblyReference.cache
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\VP_Proekt_Connect4.Form1.resources
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Form_Home.resources
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Instructions.resources
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Properties.Resources.resources
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csproj.GenerateResource.cache
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csproj.CoreCompileInputs.cache
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.exe
+C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.pdb
