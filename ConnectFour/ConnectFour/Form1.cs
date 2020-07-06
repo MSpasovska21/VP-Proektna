@@ -216,7 +216,7 @@ namespace VP_Proekt_Connect4
                     if (rounds2 == (bestOf / 2) + 1)
                     {
                         lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
-                        DialogResult result = MessageBox.Show(player2.name + " Win the Game", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player2.name + " Won the Game", "Congratulations", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newGame();
                         else
@@ -226,7 +226,7 @@ namespace VP_Proekt_Connect4
                     {
                         rounds2++;
                         lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
-                        DialogResult result = MessageBox.Show(player2.name + " Win this Round.Are you ready for next round?", player1.name + "'s Time is Up", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player2.name + " Wins this Round.Are you ready for next round?", player1.name + "'s Time is Up", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newRound();
                         else
@@ -246,7 +246,7 @@ namespace VP_Proekt_Connect4
                     if (rounds1 == (bestOf / 2) + 1)
                     {
                         lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
-                        DialogResult result = MessageBox.Show(player1.name + " Win the Game", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player1.name + " Won the Game", "Congratulations", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newGame();
                         else
@@ -256,7 +256,7 @@ namespace VP_Proekt_Connect4
                     {
                         rounds1++;
                         lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
-                        DialogResult result = MessageBox.Show(player1.name + " Win this Round.Are you ready for next round?", player2.name + "'s Time is Up", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player1.name + " Wins this Round.Are you ready for next round?", player2.name + "'s Time is Up", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newRound();        
                         else
@@ -296,7 +296,7 @@ namespace VP_Proekt_Connect4
                     lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
                     if (rounds1 == (bestOf / 2) + 1)
                     {
-                        DialogResult result = MessageBox.Show(player1.name + " Win the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player1.name + " Won the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
                         if(result == DialogResult.Yes)
                         {
                             newGame();
@@ -306,7 +306,7 @@ namespace VP_Proekt_Connect4
                     }
                     else
                     {
-                        DialogResult result = MessageBox.Show(player1.name + " Win this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player1.name + " Wins this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
                         if(result == DialogResult.Yes)
                             newRound();
                         else
@@ -348,7 +348,7 @@ namespace VP_Proekt_Connect4
                     lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
                     if (rounds2 == (bestOf/2)+1)
                     {
-                        DialogResult result = MessageBox.Show(player2.name + " Win the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player2.name + " Won the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newGame();
                         else
@@ -356,7 +356,7 @@ namespace VP_Proekt_Connect4
                     }
                     else
                     {
-                        DialogResult result = MessageBox.Show(player2.name + " Win this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player2.name + " Wins this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
                         if(result == DialogResult.Yes)
                             newRound();
                         else
