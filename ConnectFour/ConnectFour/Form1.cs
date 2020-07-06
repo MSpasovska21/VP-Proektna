@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using ConnectFour;
+using Microsoft.Win32;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
@@ -17,18 +18,22 @@ namespace VP_Proekt_Connect4
     public partial class Form1 : Form
     {
         Rectangle rect;
-        static int bestOf=3;
-        Player player1 = new Player(true,Color.Green,120);
-        Player player2 = new Player(false,Color.Red,120);
         int[] allowedincolumn = { 6, 6, 6, 6, 6, 6, 6 }; //niza koja za sekoja kolona vodi smetka kolku krugovi ima smesteno. Koga nekoj element kje dojde do 6, vekje ne moze da se stavaat vo taa kolona.
         int[,] board = new int[6,7]; // inicijalno 0(nicie pole), 1(pole kade sto e zavzemeno od player1, 2(pole kade sto e zavzemeno od player2)
         int col, rounds1 = 0, rounds2 = 0, draw=0;
         Color color;
         int timeElapsed1 = 0, timeElapsed2 = 0, temp;
         bool start = true;
+        static string name1 = Form_Options.player1;
+        static string name2 = Form_Options.player2;
+        static int bestOf = Form_Options.bestOf;
+        static int time = Form_Options.time;
+        Player player1 = new Player(true, Color.Green, time, name1);
+        Player player2 = new Player(false, Color.Red, time, name2);
         public Form1()
         {
             InitializeComponent();
+            
             pbPlayer1.Maximum = player1.time;
             pbPlayer2.Maximum = player2.time;
             pbPlayer1.Value = player1.time;
@@ -36,6 +41,11 @@ namespace VP_Proekt_Connect4
             lblPlayer1TL.Text = String.Format("{0:00}:{1:00}", player1.time / 60, player1.time % 60);
             lblPlayer2TL.Text = String.Format("{0:00}:{1:00}", player2.time / 60, player1.time % 60);
             lblBestOf.Text = "Best Of " + bestOf.ToString() + " Games";
+            lblPlayerOne.Text = player1.name;
+            lblPlayerTwo.Text = player2.name;
+            lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
+            lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
+            lblTurn.Text = player1.name + "'s turn";
         }
         private void pnlBoard_Paint(object sender, PaintEventArgs e)
         {
@@ -72,6 +82,7 @@ namespace VP_Proekt_Connect4
             board = new int [6, 7];
             lblPlayer1TL.Text = String.Format("{0:00}:{1:00}", player1.time / 60, player1.time % 60);
             lblPlayer2TL.Text = String.Format("{0:00}:{1:00}", player2.time / 60, player1.time % 60);
+            lblTurn.Text = player1.name + "'s turn";
         }
         private void newGame()
         {
@@ -97,8 +108,9 @@ namespace VP_Proekt_Connect4
             lblPlayer2TL.Text = String.Format("{0:00}:{1:00}", player2.time / 60, player1.time % 60);
             rounds1 = 0;
             rounds2 = 0;
-            lblRounds1.Text = "Player 1 Rounds Won: " + rounds1.ToString();
-            lblRounds2.Text = "Player 2 Rounds Won: " + rounds2.ToString();
+            lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
+            lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
+            lblTurn.Text = player1.name + "'s turn";
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -203,18 +215,22 @@ namespace VP_Proekt_Connect4
                     timer1.Stop();
                     if (rounds2 == (bestOf / 2) + 1)
                     {
-                        lblRounds2.Text = "Player 2 Rounds Won: " + rounds2.ToString();
-                        DialogResult result = MessageBox.Show("Player 2 Win the Game", "Congratulations", MessageBoxButtons.YesNo);
-                        if(result == DialogResult.Yes)
+                        lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
+                        DialogResult result = MessageBox.Show(player2.name + " Win the Game", "Congratulations", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
                             newGame();
+                        else
+                            Application.Exit();
                     }
                     else
                     {
                         rounds2++;
-                        lblRounds2.Text = "Player 2 Rounds Won: " + rounds2.ToString();
-                        DialogResult result = MessageBox.Show("Player 2 Win this Round.Are you ready for next round?", "Player 1 Time is Up", MessageBoxButtons.YesNo);
+                        lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
+                        DialogResult result = MessageBox.Show(player2.name + " Win this Round.Are you ready for next round?", player1.name + "'s Time is Up", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newRound();
+                        else
+                            Application.Exit();
                     }
                 }
             }
@@ -229,18 +245,22 @@ namespace VP_Proekt_Connect4
                     timer1.Stop();
                     if (rounds1 == (bestOf / 2) + 1)
                     {
-                        lblRounds1.Text = "Player 1 Rounds Won: " + rounds1.ToString();
-                        DialogResult result = MessageBox.Show("Player 1 Win the Game", "Congratulations", MessageBoxButtons.YesNo);
+                        lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
+                        DialogResult result = MessageBox.Show(player1.name + " Win the Game", "Congratulations", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newGame();
+                        else
+                            Application.Exit();
                     }
                     else
                     {
                         rounds1++;
-                        lblRounds1.Text = "Player 1 Rounds Won: " + rounds1.ToString();
-                        DialogResult result = MessageBox.Show("Player 1 Win this Round.Are you ready for next round?", "Player 2 Time is Up", MessageBoxButtons.YesNo);
+                        lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
+                        DialogResult result = MessageBox.Show(player1.name + " Win this Round.Are you ready for next round?", player2.name + "'s Time is Up", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
-                            newRound();                   
+                            newRound();        
+                        else
+                            Application.Exit();
                     }
                 }
             }
@@ -255,7 +275,7 @@ namespace VP_Proekt_Connect4
             }
             if(player1.turn)
             {
-                lblTurn.Text = "Player 2 Turn";
+                lblTurn.Text = player2.name + "'s turn";
                 player1.turn = false;
                 player2.turn = true;
                 col = Column(e.Location);
@@ -273,35 +293,41 @@ namespace VP_Proekt_Connect4
                 {
                     rounds1++;
                     timer1.Stop();
+                    lblRounds1.Text = player1.name + " Rounds Won: " + rounds1.ToString();
                     if (rounds1 == (bestOf / 2) + 1)
                     {
-                        lblRounds1.Text = "Player 1 Rounds Won: " + rounds1.ToString();
-                        DialogResult result = MessageBox.Show("Player 1 Win the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player1.name + " Win the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
                         if(result == DialogResult.Yes)
                         {
                             newGame();
                         }
+                        else
+                            Application.Exit();
                     }
                     else
                     {
-                        lblRounds1.Text = "Player 1 Rounds Won: " + rounds1.ToString();
-                        DialogResult result = MessageBox.Show("Player 1 Win this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player1.name + " Win this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
                         if(result == DialogResult.Yes)
                             newRound();
+                        else
+                            Application.Exit();
                     }
                 }
                 if(isDraw())
                 {
                     draw++;
+                    timer1.Stop();
                     lblDraw.Text = "Draws: " + draw.ToString();
                     DialogResult result = MessageBox.Show("This Round is a Draw. Are you ready for next round?", "Draw", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                         newRound();
+                    else
+                        Application.Exit();
                 }
             }
             else if(player2.turn)
             {
-                lblTurn.Text = "Player 1 Turn";
+                lblTurn.Text = player1.name + "'s turn";
                 player2.turn = false;
                 player1.turn = true;
                 col = Column(e.Location);
@@ -319,28 +345,34 @@ namespace VP_Proekt_Connect4
                 {
                     timer1.Stop();
                     rounds2++;
+                    lblRounds2.Text = player2.name + " Rounds Won: " + rounds2.ToString();
                     if (rounds2 == (bestOf/2)+1)
                     {
-                        lblRounds2.Text = "Player 2 Rounds Won: " + rounds2.ToString();
-                        DialogResult result = MessageBox.Show("Player 2 Win the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player2.name + " Win the Game. New Game?", "Congratulations", MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                             newGame();
+                        else
+                            Application.Exit();
                     }
                     else
                     {
-                        lblRounds2.Text = "Player 2 Rounds Won: " + rounds2.ToString();
-                        DialogResult result = MessageBox.Show("Player 2 Win this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(player2.name + " Win this Round. Are you ready for next round?", "Congratulations", MessageBoxButtons.YesNo);
                         if(result == DialogResult.Yes)
                             newRound();
+                        else
+                            Application.Exit();
                     }
                 }
                 if (isDraw())
                 {
                     draw++;
+                    timer1.Stop();
                     lblDraw.Text = "Draws: " + draw.ToString();
                     DialogResult result = MessageBox.Show("This Round is a Draw. Are you ready for next round?", "Draw", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                         newRound();
+                    else
+                        Application.Exit();
                 }
             }
         }
