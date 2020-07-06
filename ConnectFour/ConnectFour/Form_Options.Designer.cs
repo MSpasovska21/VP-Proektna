@@ -122,9 +122,9 @@
             // dUD_Rounds
             // 
             this.dUD_Rounds.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dUD_Rounds.Location = new System.Drawing.Point(114, 129);
+            this.dUD_Rounds.Location = new System.Drawing.Point(106, 129);
             this.dUD_Rounds.Name = "dUD_Rounds";
-            this.dUD_Rounds.Size = new System.Drawing.Size(45, 21);
+            this.dUD_Rounds.Size = new System.Drawing.Size(72, 21);
             this.dUD_Rounds.TabIndex = 8;
             this.dUD_Rounds.Text = "3";
             this.dUD_Rounds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -132,7 +132,7 @@
             // lblRound
             // 
             this.lblRound.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRound.Location = new System.Drawing.Point(165, 123);
+            this.lblRound.Location = new System.Drawing.Point(184, 123);
             this.lblRound.Name = "lblRound";
             this.lblRound.Size = new System.Drawing.Size(80, 30);
             this.lblRound.TabIndex = 9;
@@ -142,9 +142,9 @@
             // dUD_Seconds
             // 
             this.dUD_Seconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dUD_Seconds.Location = new System.Drawing.Point(209, 168);
+            this.dUD_Seconds.Location = new System.Drawing.Point(203, 168);
             this.dUD_Seconds.Name = "dUD_Seconds";
-            this.dUD_Seconds.Size = new System.Drawing.Size(45, 21);
+            this.dUD_Seconds.Size = new System.Drawing.Size(71, 21);
             this.dUD_Seconds.TabIndex = 10;
             this.dUD_Seconds.Text = "3";
             this.dUD_Seconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -161,7 +161,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(259, 163);
+            this.label5.Location = new System.Drawing.Point(280, 163);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 30);
             this.label5.TabIndex = 12;
@@ -203,12 +203,12 @@
         private System.Windows.Forms.TextBox tbName2;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.DomainUpDown dUD_Rounds;
         private System.Windows.Forms.Label label3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblRound;
         private System.Windows.Forms.DomainUpDown dUD_Seconds;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DomainUpDown dUD_Rounds;
     }
 }

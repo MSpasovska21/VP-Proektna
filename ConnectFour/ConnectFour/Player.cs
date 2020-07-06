@@ -13,11 +13,13 @@ namespace VP_Proekt_Connect4
         public bool turn;
         public Color color;
         public int time;
-        public Player(bool turn, Color color, int time)
+        public string name;
+        public Player(bool turn, Color color, int time, string name)
         {
             this.turn = turn;
             this.color = color;
             this.time = time;
+            this.name = name;
         }
         public Player() { }
     }
