@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlBoard = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPlayerOne = new System.Windows.Forms.Label();
@@ -183,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 676);
+            this.ClientSize = new System.Drawing.Size(1264, 711);
             this.Controls.Add(this.lblBestOf);
             this.Controls.Add(this.lblDraw);
             this.Controls.Add(this.lblRounds2);
@@ -197,6 +198,7 @@
             this.Controls.Add(this.lblPlayerOne);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlBoard);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Connect 4";
             this.ResumeLayout(false);

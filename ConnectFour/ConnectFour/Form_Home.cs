@@ -60,10 +60,9 @@ namespace ConnectFour
         }
 
         private void Play_Click(object sender, EventArgs e)
-        {
-           // this.Close();
-            var f = new Form1();
-            f.Show();
+        { 
+            Form_Options fo = new Form_Options();
+            fo.Show();
         }
 
         private void lnlRights_Click(object sender, EventArgs e)
