@@ -21,3 +21,5 @@ C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\Conne
 C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.csproj.CoreCompileInputs.cache
 C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.exe
 C:\Users\vace_\Desktop\~Desktop\proektce\ConnectFour\ConnectFour\obj\Debug\ConnectFour.pdb
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\VP_Proekt_Connect4.Form1.resources
+C:\Users\Monika\Desktop\VP-Proektna\ConnectFour\ConnectFour\obj\Debug\ConnectFour.Form_Options.resources
