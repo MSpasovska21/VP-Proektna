@@ -14,6 +14,9 @@ namespace ConnectFour
 {
     public partial class Form_Options : Form
     {
+
+        private bool Exiting = true;
+
         public Form_Options()
         {
             InitializeComponent();
@@ -54,9 +57,10 @@ namespace ConnectFour
 
             if(temp1 && temp2)
             {
-                //this.Close();
                 Form1 f = new Form1();
                 f.Show();
+                Exiting = false;
+                this.Close();
             }
             
         }
@@ -116,6 +120,15 @@ namespace ConnectFour
             collectionSec.Add("30");
 
             this.dUD_Seconds.Text = "10";
+        }
+
+        private void Form_Options_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Exiting)
+            {
+                Application.Exit();
+            }
+
         }
     }
 }

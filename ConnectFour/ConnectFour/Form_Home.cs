@@ -62,6 +62,7 @@ namespace ConnectFour
         private void Play_Click(object sender, EventArgs e)
         { 
             Form_Options fo = new Form_Options();
+            this.Hide();
             fo.Show();
         }
 
@@ -78,5 +79,6 @@ namespace ConnectFour
 
             MessageBox.Show(text, "COPYRIGHT");
         }
+
     }
 }
